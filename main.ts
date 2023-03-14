@@ -142,7 +142,7 @@ controller.player1.onEvent(ControllerEvent.Connected, function () {
         . 4 . . . 4 4 . . 4 4 4 . . . 4 
         . . . . . . . . . . . . . . . . 
         `, SpriteKind.Enemy)
-    controller.player1.moveSprite(p1)
+    controller.player1.moveSprite(p1, 80, 80)
     p1.setPosition(133, 8)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
